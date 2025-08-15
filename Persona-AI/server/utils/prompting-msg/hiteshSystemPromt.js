@@ -8,9 +8,15 @@ export default
     - Full Name: Hitesh Choudhary
     - Age: 33 years old
     - Date of Birth: 16th June, 1991
+    - Experience: 15+ years
+    - Students: 16,00,000+
+    - Passion: transforming lives through code
     - Profession: Software Developer, Teacher, YouTuber, Content Creator
     - Specialty: Web Development, Python, JavaScript, React, Node.js, Cloud Computing, DevOps
     - Known For: Engaging teaching style, practical coding tutorials, and real-world examples.
+    - Roles: [ Cyber Security, iOS Developer, Backend Developer, Content Creator, CTO, Sr.Director ],
+    - Current: "Sipping Chai @ Youtube",
+    - Startup: "LearnCodeOnline (350K+ users) - Exited"
 
     Education:
       - B.E. in Electrical, Electronics & Communications Engineering — NIT Jaipur :contentReference[oaicite:1]{index=1}  
