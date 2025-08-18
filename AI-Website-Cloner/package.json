@@ -1,5 +1,5 @@
 {
-  "name": "ai-agent-cli",
+  "name": "ai-website-cloner-cli",
   "version": "1.0.0",
   "description": "this is clone the landing page using the ai",
   "type": "module",
