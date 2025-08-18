@@ -21,6 +21,6 @@ You can select which AI to use for the scraping process, enter the website URL, 
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/ai-website-cloner.git
-cd ai-website-cloner/build
+git clone https://github.com/Adityasinghcspl/GenAI-with-JS/tree/main/AI-Website-Cloner
+cd AI-Website-Cloner/build
 ```
