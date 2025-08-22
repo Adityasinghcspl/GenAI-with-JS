@@ -4,10 +4,10 @@ import processURLEmbedding from "../utils/embedding/urlEmbedding.js";
 
 export const contentUploadHandler = async (req, res) => {
   try {
-    const { message } = req.body;
-    if (!message) return res.status(400).json({ error: "Message is required" });
+    const { content } = req.body;
+    if (!content) return res.status(400).json({ error: "Content is required" });
 
-    await processContentEmbedding(message);
+    await processContentEmbedding(content);
     res.json({ success: true, message: "✅ Content embedded successfully" });
   } catch (error) {
     console.error("Content Embedding Error:", error);
