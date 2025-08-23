@@ -11,4 +11,5 @@ export interface ChatMessage {
   message: string;
   response: string;
   timestamp: string;
+  type: 'user' | 'bot';
 }

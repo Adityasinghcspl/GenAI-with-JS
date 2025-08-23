@@ -53,7 +53,7 @@ export default function ChatPanel({
   };
 
   return (
-    <div className="flex-1 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex flex-col">
+    <div className="flex-1 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex flex-col overflow-hidden">
       <div className="bg-gray-800/50 backdrop-blur-sm border-b border-gray-700 p-4">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
@@ -88,7 +88,7 @@ export default function ChatPanel({
             </button>
           </div>
         ) : (
-          <div className="flex-1 overflow-y-auto p-4 space-y-6">
+          <div className="flex-1 overflow-y-auto p-4 space-y-6 min-h-0">
             {/* Welcome message when sources are available but no chat yet */}
             {messages.length === 0 && hasContent && !currentUserMessage && (
               <div className="flex justify-start">
@@ -131,12 +131,12 @@ export default function ChatPanel({
                 
                 {/* AI response */}
                 <div className="flex justify-start mb-6">
-                  <div className="flex space-x-3 max-w-4xl">
+                  <div className="flex space-x-3 max-w-4xl w-full">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
                       <Bot className="w-4 h-4 text-white" />
                     </div>
                     <div className="flex flex-col items-start">
-                      <div className="bg-gray-800/80 backdrop-blur-sm text-gray-100 rounded-2xl px-6 py-4 shadow-lg border border-gray-700/50">
+                      <div className="bg-gray-800/80 backdrop-blur-sm text-gray-100 rounded-2xl px-6 py-4 shadow-lg border border-gray-700/50 max-w-3xl w-full">
                         <ReactMarkdown
                           remarkPlugins={[remarkGfm]}
                           components={{

@@ -111,7 +111,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col">
+    <div className="h-screen bg-gray-900 flex flex-col overflow-hidden">
       <Toaster 
         position="top-right"
         toastOptions={{
@@ -123,7 +123,7 @@ function App() {
       />
       <Header title="My Knowledge Vault" />
       
-      <div className="flex flex-1">
+      <div className="flex flex-1 overflow-hidden">
         <SourcesPanel 
           onAddClick={handleAddClick}
           sources={sources}

@@ -24,7 +24,7 @@ export default function SourcesPanel({
   const allSelected = sources.length > 0 && selectedSources.length === sources.length;
   
   return (
-    <div className="w-80 bg-gray-800 border-r border-gray-700 flex flex-col">
+    <div className="w-80 bg-gray-800 border-r border-gray-700 flex flex-col h-full overflow-hidden">
       <div className="p-4 border-b border-gray-700">
         <h2 className="text-lg font-semibold text-white mb-4">Sources</h2>
         <div className="space-y-2">
